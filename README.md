@@ -1,7 +1,7 @@
 
 
 <div align="center">
-	<a href="https://vimeo.com/timmwagener/pipelineriggingreel2013" target="_blank"><img src="http://www.kiiia.com/posecritter/repo_images/posecritter_header.png"></a>
+	<a href="https://vimeo.com/timmwagener/pipelineriggingreel2013" target="_blank"><img src="http://www.kiiia.com/posecritter/repo_images/posecritter_header_non_transparent.png"></a>
 </div>
 -----------------------
 <div align="left">
