@@ -20,19 +20,30 @@
 
 What is it ?
 -----------------------
-**Pipeline repository** for the project rugbybugs for which i served as **Pipeline, Rigging and Lighting/Shading TD**. The repository was created long after the project finished to serve as a code backup.
+A database driven pose library for Autodesk Maya.
 
-The content of the repository consists mainly of:
-* Render setup scripts for Vray for Maya
-* Render reconstruction scripts for Nuke
-* Scripted rigging modules
-* Environment setup scripts for Maya and Nuke
+
+Features
+-----------------------
+* Store poses in easily transferable databases
+* Nice and easy user interface
+* Plays nice with references
 
 
 Please note
 -----------------------
-The development on this tool is abandonded.
+The development on this tool is basically abandonded. It probably works well,
+but there might be better/newer alternatives. Also this is fairly old code,
+there are a lot of things i would do different today.
 
+How to
+-----------------------
+Copy the folder poseCritter within the downloaded .zip or cloned repo
+somewhere on your Maya script path. (On windows the default is **C:\Users\USERNAME\Documents\maya\2012-x64\scripts**).
+Then run the following code:
+	
+	from poseCritter import poseCritter
+	poseCritter.poseCritter()
 
 Dependencies
 -----------------------
