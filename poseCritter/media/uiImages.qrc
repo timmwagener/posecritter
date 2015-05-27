@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="uiImages">
+    <file>helpTags.png</file>
+    <file>helpNamespaces.png</file>
+    <file>poseCritterHeader.png</file>
+  </qresource>
+</RCC>

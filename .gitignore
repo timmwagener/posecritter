@@ -1,0 +1,6 @@
+
+# Ignore those file types
+*.pyc
+*.db
+
+

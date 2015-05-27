@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>405</width>
+    <height>1003</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>401</width>
+      <height>961</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="lytVertical">
+     <item>
+      <widget class="QWidget" name="wdgtHeader" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>60</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>-1</y>
+          <width>391</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QWidget" name="wdgtHeaderImage" native="true">
+           <property name="styleSheet">
+            <string notr="true">QWidget#wdgtHeaderImage{border-image: url(:/uiImages/poseCritterHeader.png);}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="wdgtTabs" native="true">
+       <widget class="QWidget" name="verticalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>-1</y>
+          <width>391</width>
+          <height>861</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="lytlTabs">
+         <item>
+          <widget class="QTabWidget" name="tabWidget">
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="tabPoses">
+            <attribute name="title">
+             <string>Poses</string>
+            </attribute>
+            <widget class="QWidget" name="verticalLayoutWidget_4">
+             <property name="geometry">
+              <rect>
+               <x>-1</x>
+               <y>-1</y>
+               <width>401</width>
+               <height>841</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="lytTabPoses">
+              <item>
+               <widget class="QWidget" name="wdgtPosesNamespace" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>70</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>70</height>
+                 </size>
+                </property>
+                <widget class="QWidget" name="verticalLayoutWidget_9">
+                 <property name="geometry">
+                  <rect>
+                   <x>9</x>
+                   <y>-1</y>
+                   <width>371</width>
+                   <height>61</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_7">
+                  <item>
+                   <widget class="QGroupBox" name="groupBox">
+                    <property name="title">
+                     <string>Namespace</string>
+                    </property>
+                    <widget class="QWidget" name="horizontalLayoutWidget_2">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>20</y>
+                       <width>358</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_2">
+                      <item>
+                       <widget class="QComboBox" name="cmbbxNamespace">
+                        <property name="minimumSize">
+                         <size>
+                          <width>300</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>300</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="btnRefreshNamespaces">
+                        <property name="minimumSize">
+                         <size>
+                          <width>50</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string>Refresh</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="wdgtGroups" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>80</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>80</height>
+                 </size>
+                </property>
+                <widget class="QWidget" name="verticalLayoutWidget_15">
+                 <property name="geometry">
+                  <rect>
+                   <x>9</x>
+                   <y>-1</y>
+                   <width>371</width>
+                   <height>81</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_11">
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_4">
+                    <property name="title">
+                     <string>Groups</string>
+                    </property>
+                    <widget class="QWidget" name="gridLayoutWidget">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>10</y>
+                       <width>351</width>
+                       <height>71</height>
+                      </rect>
+                     </property>
+                     <layout class="QGridLayout" name="lytGroups">
+                      <item row="0" column="0">
+                       <widget class="QLineEdit" name="leGroupName"/>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QPushButton" name="btnCreateGroup">
+                        <property name="text">
+                         <string>Create Group</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QComboBox" name="cmbbxGroups"/>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QPushButton" name="btnDeleteGroup">
+                        <property name="text">
+                         <string>Delete Group</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="wdgtPosesScrlArea" native="true">
+                <widget class="QWidget" name="verticalLayoutWidget_8">
+                 <property name="geometry">
+                  <rect>
+                   <x>9</x>
+                   <y>-1</y>
+                   <width>371</width>
+                   <height>491</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_6">
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_2">
+                    <property name="title">
+                     <string>Thumbnails</string>
+                    </property>
+                    <widget class="QScrollArea" name="scrlAreaPoseButtons">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>50</y>
+                       <width>351</width>
+                       <height>411</height>
+                      </rect>
+                     </property>
+                     <property name="verticalScrollBarPolicy">
+                      <enum>Qt::ScrollBarAlwaysOn</enum>
+                     </property>
+                     <property name="horizontalScrollBarPolicy">
+                      <enum>Qt::ScrollBarAlwaysOff</enum>
+                     </property>
+                     <property name="widgetResizable">
+                      <bool>true</bool>
+                     </property>
+                     <widget class="QWidget" name="scrlAreaPoseButtonsWidget">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>331</width>
+                        <height>407</height>
+                       </rect>
+                      </property>
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                     </widget>
+                    </widget>
+                    <widget class="QSlider" name="sldButtonSize">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>470</y>
+                       <width>351</width>
+                       <height>16</height>
+                      </rect>
+                     </property>
+                     <property name="minimum">
+                      <number>50</number>
+                     </property>
+                     <property name="maximum">
+                      <number>330</number>
+                     </property>
+                     <property name="value">
+                      <number>100</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="tickPosition">
+                      <enum>QSlider::TicksAbove</enum>
+                     </property>
+                    </widget>
+                    <widget class="QWidget" name="widget" native="true">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>20</y>
+                       <width>351</width>
+                       <height>21</height>
+                      </rect>
+                     </property>
+                     <widget class="QWidget" name="horizontalLayoutWidget">
+                      <property name="geometry">
+                       <rect>
+                        <x>-1</x>
+                        <y>0</y>
+                        <width>351</width>
+                        <height>22</height>
+                       </rect>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_3">
+                       <item>
+                        <widget class="QLineEdit" name="leFilter"/>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="lblFilter">
+                         <property name="text">
+                          <string>Filter</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="wdgtPosesButtons" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>180</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>180</height>
+                 </size>
+                </property>
+                <widget class="QWidget" name="verticalLayoutWidget_7">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>0</y>
+                   <width>371</width>
+                   <height>171</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_5">
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_3">
+                    <property name="title">
+                     <string>Pose Control</string>
+                    </property>
+                    <widget class="QWidget" name="verticalLayoutWidget">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>19</y>
+                       <width>351</width>
+                       <height>137</height>
+                      </rect>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout">
+                      <item>
+                       <widget class="QLineEdit" name="lePoseButtonName">
+                        <property name="text">
+                         <string>PoseName</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout">
+                        <item>
+                         <widget class="QRadioButton" name="chkbxAddByTag">
+                          <property name="text">
+                           <string>Add by tag</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="leTag">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="btnTagFromSelected">
+                        <property name="text">
+                         <string>Get Tag from selected</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="btnAdd">
+                        <property name="text">
+                         <string>Add Pose</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="btnRemoveAll">
+                        <property name="text">
+                         <string>Remove all</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="tabHelp">
+            <attribute name="title">
+             <string>Help</string>
+            </attribute>
+            <widget class="QWidget" name="verticalLayoutWidget_10">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>0</y>
+               <width>371</width>
+               <height>751</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <widget class="QGroupBox" name="grpbxNamespaces">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>400</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>400</height>
+                 </size>
+                </property>
+                <property name="title">
+                 <string>Namespaces</string>
+                </property>
+                <widget class="QWidget" name="verticalLayoutWidget_11">
+                 <property name="geometry">
+                  <rect>
+                   <x>9</x>
+                   <y>19</y>
+                   <width>351</width>
+                   <height>371</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="lytHelpTags">
+                  <item>
+                   <widget class="QWidget" name="wdgtHelpNamespaceImage1" native="true">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QWidget#wdgtHelpNamespaceImage1{border-image:url(:/uiImages/helpNamespaces.png);}</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="wdgtHelpNamespaceText" native="true">
+                    <widget class="QWidget" name="verticalLayoutWidget_12">
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>0</y>
+                       <width>361</width>
+                       <height>261</height>
+                      </rect>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_8">
+                      <item>
+                       <widget class="Line" name="line_3">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QTextEdit" name="textEdit">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
+                        <property name="verticalScrollBarPolicy">
+                         <enum>Qt::ScrollBarAlwaysOff</enum>
+                        </property>
+                        <property name="horizontalScrollBarPolicy">
+                         <enum>Qt::ScrollBarAlwaysOff</enum>
+                        </property>
+                        <property name="html">
+                         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#ffffff;&quot;&gt;1.Namespace Selection&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; color:#d9d9d9;&quot;&gt;Only the first namespace gets displayed, no matter how many nested references you have.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#ffffff;&quot;&gt;2. Refresh&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; color:#d9d9d9;&quot;&gt;After referencing a new character, make sure to hit the Refresh button in order to get the new namespace.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ff0000;&quot;&gt;IMPORTANT&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#d9d9d9;&quot;&gt;Namespaces have NO relevance for SAVING a pose, therefore it can be set to any value when storing a pose. However when applying a pose the current selected namespace is added to the manipulator pathes. This helps to distribute equal poses to several references of the same rig.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600; color:#d9d9d9;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="grpbxTags">
+                <property name="title">
+                 <string>Tags</string>
+                </property>
+                <widget class="QWidget" name="verticalLayoutWidget_13">
+                 <property name="geometry">
+                  <rect>
+                   <x>9</x>
+                   <y>19</y>
+                   <width>351</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_9">
+                  <item>
+                   <widget class="QWidget" name="wdgtHelpTagsImage1" native="true">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>70</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>70</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QWidget#wdgtHelpTagsImage1{border-image:url(:/uiImages/helpTags.png);}</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="wdgtHelpTagsText" native="true">
+                    <widget class="QWidget" name="verticalLayoutWidget_14">
+                     <property name="geometry">
+                      <rect>
+                       <x>-1</x>
+                       <y>-1</y>
+                       <width>361</width>
+                       <height>171</height>
+                      </rect>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_10">
+                      <item>
+                       <widget class="Line" name="line_4">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QTextEdit" name="textEdit_2">
+                        <property name="enabled">
+                         <bool>false</bool>
+                        </property>
+                        <property name="verticalScrollBarPolicy">
+                         <enum>Qt::ScrollBarAlwaysOff</enum>
+                        </property>
+                        <property name="horizontalScrollBarPolicy">
+                         <enum>Qt::ScrollBarAlwaysOff</enum>
+                        </property>
+                        <property name="html">
+                         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#ffffff;&quot;&gt;1.Add by Tag&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; color:#d9d9d9;&quot;&gt;Tags are a convenience option thats frees you from re-selecting all the items you want to store a pose for over and over again. A tag is basically a line of text with all manipulator names whose attributes should make the pose, separated by a comma. The names in the tag must be the complete names with all namespaces.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; color:#d9d9d9;&quot;&gt;If unchecked, the pose will be stored for the current selection.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#ffffff;&quot;&gt;2. Get Tag from selected&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; color:#d9d9d9;&quot;&gt;Set the tag string from the current selection.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="grpbxAbout">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>60</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>60</height>
+                 </size>
+                </property>
+                <property name="title">
+                 <string>About</string>
+                </property>
+                <widget class="QWidget" name="horizontalLayoutWidget_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>20</y>
+                   <width>351</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <widget class="QLabel" name="lblAuthor">
+                    <property name="text">
+                     <string>poseCritter v.0.7 by Timm Wagener // wagenertimm@gmail.com</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="wdgtFooter" native="true">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>0</y>
+          <width>391</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="Line" name="line">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="leStatus"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>405</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="uiImages.qrc"/>
+ </resources>
+ <connections/>
+</ui>
